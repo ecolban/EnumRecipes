@@ -33,20 +33,20 @@ public class DirectionTest {
     
     
     @Test
-    public void testGetRowIncrement() {
-	assertEquals(-1, Direction.NORTH.getRowIncrement());
-	assertEquals(0, Direction.EAST.getRowIncrement());
-	assertEquals(1, Direction.SOUTH.getRowIncrement());
-	assertEquals(0, Direction.WEST.getRowIncrement());
+    public void testGetDeltaRow() {
+	assertEquals(-1, Direction.NORTH.getDeltaRow());
+	assertEquals(0, Direction.EAST.getDeltaRow());
+	assertEquals(1, Direction.SOUTH.getDeltaRow());
+	assertEquals(0, Direction.WEST.getDeltaRow());
 
     }
 
     @Test
-    public void testGetColumnIncrement() {
-	assertEquals(0, Direction.NORTH.getColumnIncrement());
-	assertEquals(1, Direction.EAST.getColumnIncrement());
-	assertEquals(0, Direction.SOUTH.getColumnIncrement());
-	assertEquals(-1, Direction.WEST.getColumnIncrement());
+    public void testGetDeltaCol() {
+	assertEquals(0, Direction.NORTH.getDeltaCol());
+	assertEquals(1, Direction.EAST.getDeltaCol());
+	assertEquals(0, Direction.SOUTH.getDeltaCol());
+	assertEquals(-1, Direction.WEST.getDeltaCol());
 
     }
 }

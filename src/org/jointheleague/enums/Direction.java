@@ -20,14 +20,14 @@ public enum Direction {
     // prescribed in Step 1.
     
     // 4. Imagine you are moving on a rectangular grid. When moving one step NORTH on the grid, 
-    // the row number will decrease by 1 (i.e., increase by -1) and the column number will 
-    // increase by 0. Write a constructor that takes the row increase and column increase
-    // as arguments. Update the listing of the four Direction instances from Step 1 by 
-    // making use of this constructor.
+    // the row number will decrease by 1 (i.e., deltaRow = -1) and the column number will 
+    // increase by 0 (i.e, deltaColumn = 0). Write a constructor that takes the row delta 
+    // and column delta as arguments. Update the listing of the four Direction instances from 
+    // Step 1 by making use of this constructor.
     
     
-    // 5. Write instance methods getRowIncrease() and getColumnIncrease() that return the
-    // the row and column increase respectively when moving in the direction of this instance.
+    // 5. Write instance methods getDeltaRow() and getDeltaCol() that return the
+    // the row and column deltas respectively when moving in the direction of this instance.
     
     // Optional: Create an app that shows a maze on a rectangular grid, and traces a "robot" 
     // that moves like a right wall hugger.
