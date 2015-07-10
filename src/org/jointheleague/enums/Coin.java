@@ -11,7 +11,6 @@ public enum Coin {
     // Step 1.
 
     public int getValue() {
-	JOptionPane.
 	// 3. Fill in. This method should return the value of the coin.
     }
     
