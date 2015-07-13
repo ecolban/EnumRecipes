@@ -7,20 +7,13 @@ public enum Coin {
 
 
     // 1. There are 4 coins: PENNY, NICKEL, DIME, QUARTER. Add them to this enum.
-    PENNY(1), NICKEL(5), DIME(10), QUARTER(25);
 
     // 2. Each coin has a value of type int, which never changes; 1 for PENNY, 5 for NICKEL, etc. 
     // Create a constructor takes the value of the coin as argument. Apply this constructor in 
     // Step 1.
-    private final int value;
-
-    private Coin(int value) {
-	this.value = value;
-    }
 
     public int getValue() {
 	// 3. Fill in. This method should return the value of the coin.
-	return value;
     }
     
     
@@ -31,12 +24,6 @@ public enum Coin {
 	// For example, if money == 15, then 1 DIME and 1 NICKEL should be 
 	// returned rather than 2 NICKEL(s) and 5 PENNY(s). 
 	
-	for(int i = Coin.values().length - 1; i >= 0; i--){
-	    Coin c = Coin.values()[i];
-	    int v = c.getValue();
-	    change.put(c, money / v);
-	    money %= v;
-	}
 
 	return change;
     }
